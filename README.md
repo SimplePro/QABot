@@ -1,4 +1,4 @@
-SuperSmartBot
+Super Smart Q&A Bot
 -----------
 - 자연어를 알려줘야 한다.
 
