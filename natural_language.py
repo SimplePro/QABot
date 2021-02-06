@@ -24,3 +24,5 @@ class NaturalLanguageProcessing:
 natural_language_processing = NaturalLanguageProcessing("As you can see, the two keywords(or keyphrases) are exactly what I would like to obtain for a paragraph like the given one. The text is exactly about keywords extraction and that is what I obtained. We now can build the graph of the text so that we can see how our words are related to each other? Then we can use this code.")
 natural_language_processing.summarizations()
 natural_language_processing.extract_keywords()
+
+# - https://programmerbackpack.com/automated-python-keywords-extraction-textrank-vs-rake/
