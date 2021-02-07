@@ -40,7 +40,7 @@ class NaturalLanguageSummary:
         # 벡터라이저된 본문과 문장으로 코사인 유사도를 측정하고, 코사인 유사도 값이 일정값 이하면 불필요한 문장으로 간주하여 제거.
         for i, sentence_vec in enumerate(self.sentences_vec):
             cos_similarity = cosine_similarity(self.text_vec, sentence_vec)
-            if cos_similarity >= 0.2:
+            if cos_similarity >= 0.135:
                 pass
             else:
                 self.summary = self.summary.replace(self.sentences[i], "")
@@ -62,6 +62,7 @@ class NaturalLanguageSummary:
 
 
 if __name__ == '__main__':
+    # 검색 문장 : how to use github
     text = """New to git? Follow the steps below to get comfortable making changes to the code base, opening up a pull request (PR), and merging code into the primary branch. Any important git and GitHub terms are in bold with links to the official git reference materials. 
 
     Step 0: Install git and create a GitHub account 
