@@ -60,6 +60,10 @@ class NaturalLanguageSummary:
         self.keywords_list = list(keywords(self.s, lemmatize=False).split("\n"))
         return self.keywords_list
 
+    # 객관적인 글인지 분류하는 메소드. 개발해야 함.
+    def objective(self):
+        pass
+
 
 if __name__ == '__main__':
     # 검색 문장 : how to use github
