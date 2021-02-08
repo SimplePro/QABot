@@ -61,7 +61,7 @@ class NaturalLanguageSummary:
         return self.keywords_list
 
     # 객관적인 글인지 분류하는 메소드. 개발해야 함.
-    # 감정분석을 이용하는 것도 도움이 될 것 같음.
+    # 감정분석을 이용하는 것도 도움이 될 것 같음. 자료 : https://wikidocs.net/44249
     # 자료: https://arxiv.org/ftp/arxiv/papers/1312/1312.6962.pdf, https://www.cs.utah.edu/~riloff/pdfs/cicling05.pdf
     def objective(self):
         pass
