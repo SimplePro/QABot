@@ -2,6 +2,11 @@ from gensim.summarization import keywords
 from nltk.tokenize import sent_tokenize
 import numpy as np
 from numpy.linalg import norm
+import joblib
+from sklearn.feature_extraction.text import TfidfVectorizer
+from konlpy.tag import Okt
+from sklearn.model_selection import train_test_split
+import pandas as pd
 np.seterr(divide='ignore', invalid='ignore')
 
 
@@ -11,7 +16,27 @@ def cosine_similarity(A, B):
     return sim
 
 
-class NaturalLanguageSummary:
+# 감정 -> 긍정, 부정
+def num_to_emotion(x):
+    if x == 2 or x == 3 or x == 5:
+        return 1
+    else:
+        return 0
+
+
+# tfv setting
+okt = Okt()
+tfv = TfidfVectorizer(tokenizer=okt.morphs, ngram_range=(1, 2), min_df=3, max_df=0.9)
+loaded_model = joblib.load("./sentiment_analysis_model.pkl")
+data = pd.read_csv("sentiment_analysis.csv", index_col=0)
+data.head()
+features = data["sentence"]
+label = data["emotion"]
+train_x, test_x, train_y, test_y = train_test_split(features, label, test_size=0.2, random_state=0)
+tfv.fit(train_x)
+
+
+class NaturalLanguageProcessing:
     def __init__(self, s):
         self.s = s
         self.summary = s  # 요약 정리된 글
@@ -19,7 +44,20 @@ class NaturalLanguageSummary:
         self.text_vec = []  # 본문 벡터라이저
         self.sentences = []  # 본문 속 문장
         self.sentences_vec = []  # 본문 속 문장별 벡터라이저
+        self.emotion = 0.5  # 감정
 
+    # 감정 분석
+    # 객관적, 주관적 글을 구분하기 위한 메소드. (주관적인 글에는 감정이 많이 실려서 매우 긍정적이거나, 매우 부정적임)
+    def sentiment_analysis(self):
+        self.sentences = sent_tokenize(self.s)
+        emotions = []
+        for i in self.sentences:
+            sentence = tfv.transform([i])
+            emotions.append(num_to_emotion(loaded_model.predict(sentence)[0]))
+        self.emotion = sum(emotions) / len(emotions)
+        return self.emotion
+
+    # 글 요약
     def get_summary(self):
         # 전체 키워드
         self.keywords_list = list(keywords(self.s, lemmatize=False).split("\n"))
@@ -56,6 +94,7 @@ class NaturalLanguageSummary:
         # 반환
         return self.summary
 
+    # 키워드
     def get_keywords(self):
         self.keywords_list = list(keywords(self.s, lemmatize=False).split("\n"))
         return self.keywords_list
@@ -351,6 +390,7 @@ if __name__ == '__main__':
     
     *This post was originally published in October 2015 by Meghan Nelson, then a senior software engineer at HubSpot. It has since been updated by the HubSpot Product Team."""
 
-    natural_language_summary = NaturalLanguageSummary(s=text)
+    natural_language_summary = NaturalLanguageProcessing(s=text)
     print(natural_language_summary.get_summary())
     print(natural_language_summary.get_keywords())
+    print(natural_language_summary.sentiment_analysis())
