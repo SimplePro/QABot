@@ -24,7 +24,7 @@ Super Smart Q&A Bot
 |글 요약|본문과 본문 속 문장을 키워드를 기준으로 벡터라이저 후에 벡터라이저된 데이터로 본문과 문장의 코사인 유사도가 일정값 이하이면 본문 속에서 해당 문장을 제거.|완료|
 |글 종류 분류|글의 감정이 너무 긍정적이거나, 너무 부정적일때. 주관적일 가능성 ⬆|완료|
 
-- 글 종류 분류 관련 자료 : https://arxiv.org/ftp/arxiv/papers/1312/1312.6962.pdf, https://www.cs.utah.edu/~riloff/pdfs/cicling05.pdf  
+- 글 종류 분류 관련 자료 : https://arxiv.org/ftp/arxiv/papers/1312/1312.6962.pdf, https://www.cs.utah.edu/~riloff/pdfs/cicling05.pdf (읽어봐야함.)  
 
 Shout Find  (  기획중.  )
 - LiveData 원리 익히기
