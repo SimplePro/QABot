@@ -25,7 +25,9 @@ Super Smart Q&A Bot
 |감정분석|글의 감정이 너무 긍정적이거나, 너무 부정적일때. 주관적일 가능성 ⬆ (글 종류 분류에 쓰임)|완료|
 
 - 글 종류 분류 관련 자료 : https://arxiv.org/ftp/arxiv/papers/1312/1312.6962.pdf, https://www.cs.utah.edu/~riloff/pdfs/cicling05.pdf  
+(2021-02-09: 감정분석을 이용한 객관적인 글 분류 테스트하기)
 (읽어봐야함.)  
+
 
 Shout Find  (  기획중.  )
 - LiveData 원리 익히기
