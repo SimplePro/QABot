@@ -25,5 +25,8 @@ Super Smart Q&A Bot
     코사인 유사도가 일정값 이하이면 본문 속에서 해당 문장을 제거.
     - 순서대로 정리.  
 - 글 종류 분류  (  진행중.  )
+    - 감정분석
+        - 너무 긍정적이거나, 너무 부정적일때. 주관적일 가능성 ⬆
+    - 글 종류 분류 관련 자료 : https://arxiv.org/ftp/arxiv/papers/1312/1312.6962.pdf, https://www.cs.utah.edu/~riloff/pdfs/cicling05.pdf
 2. Shout Find  (  기획중.  )
 - LiveData 원리 익히기
