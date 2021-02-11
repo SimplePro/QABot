@@ -1,4 +1,4 @@
-Super Smart Q&A Bot
+Q&A Bot
 -----------
 전체적인 로직
 ---------
