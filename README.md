@@ -8,7 +8,7 @@ Q&A Bot
 
 - 질문자의 관심분야를 학습하여, 관심분야 지표도 보여준다.
 
-- 질문을 받을 때마다 단어의 분야들을 학습하여. 질문자의 주 분야를 분석하고, 추후에 질문을 하면 단어들을 분야순위로 정렬하여 보여준다.
+- 질문을 받을 때마다 단어의 분야들을 학습하여. 질문자의 주 분야를 분석하고, 추후에 질문을 하면 단어들을 분야순위로 정렬하여 보여준다. 참고: https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0
 
 예)
 질문자 관심분야  
