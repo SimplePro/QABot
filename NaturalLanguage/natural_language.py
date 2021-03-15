@@ -26,6 +26,8 @@ class NaturalLanguageProcessing:
         self.pos = [p[0] for p in pos if p[1] in ["NN", "NNP"]]
         return self.pos
 
+    # 본문의 분야를 예측하는 메소드 추가 해야함.
+
 
 if __name__ == '__main__':
     title = input("search: ")
