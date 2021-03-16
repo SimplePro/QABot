@@ -1,13 +1,14 @@
-from NaturalLanguage.natural_language import NaturalLanguageProcessing
 import wikipedia
+from NaturalLanguage.topic_module import get_topic
 
 title = input("search: ")
 search = wikipedia.search(title)
 for i in search:
     print(i)
 index = int(input("What do you want? (Enter the desired order): ")) - 1
+
 text = wikipedia.summary(search[index])
-natural_language_processing = NaturalLanguageProcessing(s=text)
-print(natural_language_processing.get_summary())
-print(natural_language_processing.get_keywords())
-print(natural_language_processing.get_pos())
+print(text)
+topic = get_topic(text)
+related_topic = [i[0] for i in topic[:3]]
+print("related_topic: ", ", ".join(related_topic))
