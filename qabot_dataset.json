@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "search": "Python",
+            "summary_word": "Python (programming language)",
+            "summary": "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.Guido van Rossum began working on Python in the late 1980's, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting and was discontinued with version 2.7.18 in 2020. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3.\nPython consistently ranks as one of the most popular programming languages.",
+            "related_topic": [
+                "Computer Science",
+                "Math",
+                "Science"
+            ]
+        },
+        {
+            "search": "Python",
+            "summary_word": "Python (programming language)",
+            "summary": "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.Guido van Rossum began working on Python in the late 1980's, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting and was discontinued with version 2.7.18 in 2020. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3.\nPython consistently ranks as one of the most popular programming languages.",
+            "related_topic": [
+                "Computer Science",
+                "Math",
+                "Science"
+            ]
+        },
+        {
+            "search": "Hello, World",
+            "summary_word": "\"Hello, World!\" program",
+            "summary": "A \"Hello, World!\" program generally is a computer program that outputs or displays the message \"Hello, World!\". Such a program is very simple in most programming languages, and is often used to illustrate the basic syntax of a programming language. It is often the first program written by people learning to code. It can also be used as a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.",
+            "related_topic": [
+                "Computer Science",
+                "Math",
+                "Science"
+            ]
+        }
+    ]
+}
