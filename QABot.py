@@ -1,7 +1,9 @@
+import numpy as np
 import wikipedia
 from NaturalLanguage.topic_module import get_topic
 import json
 from pprint import pprint
+import matplotlib.pyplot as plt
 
 
 # QABot file 을 관리하는 클래스
@@ -89,7 +91,48 @@ class QABotManagement:
             # qabot_file 에서 search 를 함.
             pass
 
+    # 관심분야 지표를 보여주는 메소드.
+    def topic_graph(self):
+        topic_count = {"Computer Science": 0, "Social": 0, "Science": 0, "Math": 0, "Sports": 0, "Art": 0, "Music": 0,
+                       "Economy": 0, "Physics": 0, "Person": 0, "Biology": 0}
+
+        for qa in self.qabot_file["data"]:
+            for t in qa["related_topic"]:
+                try:
+                    topic_count[t] += 1
+
+                except:
+                    pass
+
+        topic = sorted(map(list, topic_count.items()), key=lambda x: x[1], reverse=True)
+
+        sum_count = sum([i[1] for i in topic])
+
+        # 카운트를 퍼센테이지로 변환한다.
+        for i in range(len(topic)):
+            topic[i][1] = (topic[i][1] / sum_count) * 100
+
+        x = np.arange(len(topic))
+        topics = [i[0] for i in topic]
+        values = [i[1] for i in topic]
+
+        plt.figure(figsize=(16, 8))
+        plt.bar(x, values)
+        plt.ylabel("Unit - %")
+        plt.xticks(x, topics)
+        plt.xlabel("topics")
+
+        for i, v in enumerate(x):
+            plt.text(v, values[i], round(values[i], 3), horizontalalignment="center")
+
+        plt.show()
+
+    # 관심분야에 이슈중인 단어를 가져오는 메소드.
+    def get_issue_word(self):
+        pass
+
 
 if __name__ == '__main__':
     qabot = QABotManagement()
     qabot.search()
+    qabot.topic_graph()
