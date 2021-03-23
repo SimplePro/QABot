@@ -1,113 +1,13 @@
 {
     "data": [
         {
-            "search": "Python",
+            "search": "python",
             "summary_word": "Python (programming language)",
             "summary": "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.Guido van Rossum began working on Python in the late 1980's, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting and was discontinued with version 2.7.18 in 2020. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3.\nPython consistently ranks as one of the most popular programming languages.",
             "related_topic": [
                 "Computer Science",
                 "Math",
                 "Science"
-            ]
-        },
-        {
-            "search": "Python",
-            "summary_word": "Python (programming language)",
-            "summary": "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.Guido van Rossum began working on Python in the late 1980's, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting and was discontinued with version 2.7.18 in 2020. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3.\nPython consistently ranks as one of the most popular programming languages.",
-            "related_topic": [
-                "Computer Science",
-                "Math",
-                "Science"
-            ]
-        },
-        {
-            "search": "Hello, World",
-            "summary_word": "\"Hello, World!\" program",
-            "summary": "A \"Hello, World!\" program generally is a computer program that outputs or displays the message \"Hello, World!\". Such a program is very simple in most programming languages, and is often used to illustrate the basic syntax of a programming language. It is often the first program written by people learning to code. It can also be used as a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.",
-            "related_topic": [
-                "Computer Science",
-                "Math",
-                "Science"
-            ]
-        },
-        {
-            "search": "Steve Jobs",
-            "summary_word": "Steve Jobs (film)",
-            "summary": "Steve Jobs is a 2015 British-American biographical drama film directed by Danny Boyle and written by Aaron Sorkin. A British-American co-production, it was adapted from the 2011 biography by Walter Isaacson and interviews conducted by Sorkin, and covers 14 years (1984\u20131998) in the life of Apple Inc. co-founder Steve Jobs. Jobs is portrayed by Michael Fassbender, with Kate Winslet, Seth Rogen, Katherine Waterston, Michael Stuhlbarg, and Jeff Daniels in supporting roles.\nDevelopment began in 2011 after the rights to Isaacson's book were acquired. Filming began in January 2015. A variety of actors were considered and cast before Fassbender eventually took the role. Editing was extensive on the project, with editor Elliot Graham starting while the film was still shooting. Daniel Pemberton served as composer, with a focus on dividing the score into three distinguishable sections.\nSteve Jobs premiered at the 2015 Telluride Film Festival on September 5, 2015, and began a limited release in New York City and Los Angeles on October 9, 2015. It opened nationwide in the U.S. on October 23, 2015 to critical acclaim, with Boyle's direction, Sorkin's screenplay and the acting of Fassbender and Winslet garnering praise. People close to Jobs such as Steve Wozniak and John Sculley praised the performances, but the film also received criticism for historical inaccuracy. Winslet won a Golden Globe and a BAFTA Award for Best Supporting Actress and Sorkin won the Golden Globe Award for Best Screenplay at the 73rd Golden Globes, while Fassbender and Winslet received nominations for Best Actor and Best Supporting Actress, respectively, at the 88th Academy Awards.\n\n",
-            "related_topic": [
-                "Music",
-                "Person",
-                "Math"
-            ]
-        },
-        {
-            "search": "Python",
-            "summary_word": "Python (programming language)",
-            "summary": "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.Guido van Rossum began working on Python in the late 1980's, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting and was discontinued with version 2.7.18 in 2020. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3.\nPython consistently ranks as one of the most popular programming languages.\n\n",
-            "related_topic": [
-                "Computer Science",
-                "Math",
-                "Science"
-            ]
-        },
-        {
-            "search": "Mouse",
-            "summary_word": "Computer mouse",
-            "summary": "A computer mouse (plural mice, rarely mouses) is a hand-held pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface of a computer.\nThe first public demonstration of a mouse controlling a computer system was in 1968. Mice originally used a ball rolling on a surface to detect motion, but modern mice often have optical sensors that have no moving parts. Originally wired to a computer, many modern mice are cordless, relying on short-range radio communication with the connected system.\nIn addition to moving a cursor, computer mice have one or more buttons to allow operations such as selection of a menu item on a display. Mice often also feature other elements, such as touch surfaces and scroll wheels, which enable additional control and dimensional input.\n\n",
-            "related_topic": [
-                "Math",
-                "Science",
-                "Computer Science"
-            ]
-        },
-        {
-            "search": "Matlab",
-            "summary_word": "MATLAB",
-            "summary": "MATLAB (an abbreviation of \"matrix laboratory\") is a proprietary multi-paradigm programming language and numeric computing environment developed by MathWorks. MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages.\nAlthough MATLAB is intended primarily for numeric computing, an optional toolbox uses the MuPAD symbolic engine allowing access to symbolic computing abilities. An additional package, Simulink, adds graphical multi-domain simulation and model-based design for dynamic and embedded systems.\nAs of 2020, MATLAB has more than 4 million users worldwide. MATLAB users come from various backgrounds of engineering, science, and economics.\n\n",
-            "related_topic": [
-                "Science",
-                "Computer Science",
-                "Biology"
-            ]
-        },
-        {
-            "search": "Python",
-            "summary_word": "Python (programming language)",
-            "summary": "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.Guido van Rossum began working on Python in the late 1980's, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting and was discontinued with version 2.7.18 in 2020. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3.\nPython consistently ranks as one of the most popular programming languages.\n\n",
-            "related_topic": [
-                "Computer Science",
-                "Math",
-                "Science"
-            ]
-        },
-        {
-            "search": "Isaac Newton",
-            "summary_word": "Isaac Newton",
-            "summary": "Sir Isaac Newton  (25 December 1642 \u2013 20 March 1726/27) was an English mathematician, physicist, astronomer, theologian, and author (described in his time as a \"natural philosopher\") who is widely recognised as one of the greatest mathematicians and most influential scientists of all time and as a key figure in the scientific revolution. His book Philosophi\u00e6 Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy), first published in 1687, established classical mechanics. Newton also made seminal contributions to optics, and shares credit with Gottfried Wilhelm Leibniz for developing the infinitesimal calculus.\nIn Principia, Newton formulated the laws of motion and universal gravitation that formed the dominant scientific viewpoint until it was superseded by the theory of relativity. Newton used his mathematical description of gravity to derive Kepler's laws of planetary motion, account for tides, the trajectories of comets, the precession of the equinoxes and other phenomena, eradicating doubt about the Solar System's heliocentricity. He demonstrated that the motion of objects on Earth and celestial bodies could be accounted for by the same principles. Newton's inference that the Earth is an oblate spheroid was later confirmed by the geodetic measurements of Maupertuis, La Condamine, and others, convincing most European scientists of the superiority of Newtonian mechanics over earlier systems.\nNewton built the first practical reflecting telescope and developed a sophisticated theory of colour based on the observation that a prism separates white light into the colours of the visible spectrum. His work on light was collected in his highly influential book Opticks, published in 1704. He also formulated an empirical law of cooling, made the first theoretical calculation of the speed of sound, and introduced the notion of a Newtonian fluid. In addition to his work on calculus, as a mathematician Newton contributed to the study of power series, generalised the binomial theorem to non-integer exponents, developed a method for approximating the roots of a function, and classified most of the cubic plane curves.\nNewton was a fellow of Trinity College and the second Lucasian Professor of Mathematics at the University of Cambridge. He was a devout but unorthodox Christian who privately rejected the doctrine of the Trinity. Unusually for a member of the Cambridge faculty of the day, he refused to take holy orders in the Church of England. Beyond his work on the mathematical sciences, Newton dedicated much of his time to the study of alchemy and biblical chronology, but most of his work in those areas remained unpublished until long after his death. Politically and personally tied to the Whig party, Newton served two brief terms as Member of Parliament for the University of Cambridge, in 1689\u201390 and 1701\u201302. He was knighted by Queen Anne in 1705 and spent the last three decades of his life in London, serving as Warden (1696\u20131699) and Master (1699\u20131727) of the Royal Mint, as well as president of the Royal Society (1703\u20131727).\n\n",
-            "related_topic": [
-                "Science",
-                "Math",
-                "Person"
-            ]
-        },
-        {
-            "search": "Antoine Lavoisier",
-            "summary_word": "Antoine Lavoisier",
-            "summary": "Antoine-Laurent de Lavoisier (French: [\u0251\u0303twan l\u0254\u0281\u0251\u0303 d\u0259 lavwazje] UK:  lav-WUZ-ee-ay, US:  l\u0259-VWAH-zee-ay,; 26 August 1743 \u2013 8 May 1794), also Antoine Lavoisier after the French Revolution, was a French nobleman and chemist who was central to the 18th-century chemical revolution and who had a large influence on both the history of chemistry and the history of biology. He is widely considered in popular literature as the \"father of modern chemistry\".It is generally accepted that Lavoisier's great accomplishments in chemistry stem largely from his changing the science from a qualitative to a quantitative one. Lavoisier is most noted for his discovery of the role oxygen plays in combustion. He recognized and named oxygen (1778) and hydrogen (1783), and opposed the phlogiston theory. Lavoisier helped construct the metric system, wrote the first extensive list of elements, and helped to reform chemical nomenclature. He predicted the existence of silicon (1787) and discovered that, although matter may change its form or shape, its mass always remains the same.\nLavoisier was a powerful member of a number of aristocratic councils, and an administrator of the Ferme g\u00e9n\u00e9rale. The Ferme g\u00e9n\u00e9rale was one of the most hated components of the Ancien R\u00e9gime because of the profits it took at the expense of the state, the secrecy of the terms of its contracts, and the violence of its armed agents. All of these political and economic activities enabled him to fund his scientific research. At the height of the French Revolution, he was charged with tax fraud and selling adulterated tobacco, and was guillotined.",
-            "related_topic": [
-                "Science",
-                "Math",
-                "Biology"
-            ]
-        },
-        {
-            "search": "Cristiano Ronaldo",
-            "summary_word": "Cristiano Ronaldo",
-            "summary": "Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [k\u027ei\u0283\u02c8tj\u0250nu \u0281\u0254\u02c8na\u026bdu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team. Often considered the best player in the world and  widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards and four European Golden Shoes, both of which are records for a European player. He has won 31 major trophies in his career, including seven league titles, five UEFA Champions Leagues, one UEFA European Championship, and one UEFA Nations League title. Ronaldo holds the records for the most goals (134) and assists (42) in the history of the UEFA Champions League. He is one of the few recorded players to have made over 1,000 professional career appearances and has scored a record 770 senior career goals for club and country. He is also the second male to score 100 international goals and the first European one to achieve the feat.Born and raised in Madeira, Ronaldo began his senior club career playing for Sporting CP, before signing with Manchester United in 2003, aged 18. After winning the FA Cup in his first season, he helped United win three successive Premier League titles, the UEFA Champions League, and the FIFA Club World Cup; at age 23, he won his first Ballon d'Or. In 2009, Ronaldo was the subject of the then-most expensive association football transfer when signed for Real Madrid in a transfer worth \u20ac94 million (\u00a380 million). There, he won 15 trophies, including two La Liga titles, two Copas del Rey, and four UEFA Champions League titles, and became the club's all-time top goalscorer. After joining Madrid, Ronaldo finished runner-up for the Ballon d'Or three times, behind Lionel Messi \u2013 his perceived career rival \u2013 before winning back-to-back Ballons d'Or from 2013\u20132014 and again from 2016\u20132017. After winning a third consecutive Champions League title in 2018, Ronaldo became the first player to win the trophy five times. In 2018, he signed for Juventus in a transfer worth an initial \u20ac100 million (\u00a388 million), the highest fee ever paid by an Italian club and the highest ever paid for a player over 30 years old. He won the Serie A title in his first two seasons with the club.\nRonaldo made his senior international debut for Portugal in 2003 at age 18, and has since earned 170 caps, including appearing and scoring in ten major tournaments, becoming Portugal's most capped player and his country's all-time top goalscorer. He scored his first international goal at Euro 2004 where he helped Portugal reach the final and assumed full captaincy of the national team in July 2008. In 2015 Ronaldo was named the best Portuguese player of all time by the Portuguese Football Federation. The following year he led Portugal to their first triumph in a major tournament by winning Euro 2016, and received the Silver Boot as the second-highest goalscorer of the tournament.\nOne of the most marketable and famous athletes in the world, Ronaldo was ranked the world's highest-paid athlete by Forbes in 2016 and 2017 and the world's most famous athlete by ESPN from 2016 to 2019. Time included him on their list of the 100 most influential people in the world in 2014. Ronaldo is the first footballer, as well as only the third sportsman, to earn $1 billion in their career.\n\n",
-            "related_topic": [
-                "Sports",
-                "Social",
-                "Person"
             ]
         }
     ]
