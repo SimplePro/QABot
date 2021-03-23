@@ -1,9 +1,10 @@
 import numpy as np
-import wikipedia
 from NaturalLanguage.topic_module import get_topic
 import json
 from pprint import pprint
 import matplotlib.pyplot as plt
+import wikipediaapi
+import wikipedia
 
 
 # QABot file 을 관리하는 클래스
@@ -11,6 +12,7 @@ class QABotManagement:
     def __init__(self, qabot_file: dict = None):
         self.qabot_file = qabot_file
         self.topic_list = []  # 관심분야들을 정렬한 리스트
+        self.wiki = wikipediaapi.Wikipedia('en')
 
         self.load()  # load qabot dataset file
         self.topic()  # set topic list
@@ -48,6 +50,7 @@ class QABotManagement:
 
     # 검색하는 메소드.
     def search(self):
+
         title = input("search: ")
         try:
             search = wikipedia.search(title)
@@ -56,11 +59,8 @@ class QABotManagement:
 
             # 검색된 단어별로 topic 분류
             for i in search:
-                try:
-                    word_topic.append([i, get_topic(wikipedia.summary(i))[0][0]])
-
-                except:
-                    word_topic.append([i, None])
+                page = self.wiki.page(i)
+                word_topic.append([i, get_topic(page.summary)[0][0]])
 
             # 분야별로 정렬
             for topic in self.topic_list:
@@ -73,11 +73,13 @@ class QABotManagement:
                         if word[1] is None:
                             search_word.append(word[0])
 
-            pprint(search)
+            pprint(search_word)
 
             index = int(input("What do you want? (Enter the desired order): ")) - 1
+            print(index)
+            print(search[index])
 
-            text = wikipedia.summary(search[index])
+            text = self.wiki.page(search[index]).summary
             print(text)
 
             topic = get_topic(text)
@@ -87,9 +89,20 @@ class QABotManagement:
             self.save()
             self.topic()
 
+        # 인터넷 연결이 안되어 있다면 오프라인 검색.
         except:
-            # qabot_file 에서 search 를 함.
-            pass
+            result = []
+
+            for i in self.qabot_file["data"]:
+                if title in i["search"] or i["search"] in title or title in i["summary_word"] or i["summary_word"] in title:
+                    if i not in result:
+                        result.append(i)
+
+            pprint([i["summary_word"] for i in result])
+
+            index = int(input("What do you want? (Enter the desired order): ")) - 1
+
+            print(result[index]["summary"])
 
     # 관심분야 지표를 보여주는 메소드.
     def topic_graph(self):
