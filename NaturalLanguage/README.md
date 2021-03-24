@@ -1,3 +1,3 @@
 TopicModeling
 ----------
-link = https://github.com/SimplePro/TopicModeling
+https://github.com/SimplePro/TopicModeling
