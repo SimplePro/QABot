@@ -50,7 +50,7 @@ class QABotManagement:
             json.dump(self.qabot_file, json_file, indent=4)
 
     # 검색하는 메소드.
-    def search(self):
+    def search(self, offline_save=False):
 
         title = input("search: ")
         try:
@@ -77,10 +77,7 @@ class QABotManagement:
             pprint(search_word)
 
             index = int(input("What do you want? (Enter the desired order): ")) - 1
-            print(index)
-            print(search[index])
-
-            text = self.wiki.page(search[index]).summary
+            text = self.wiki.page(search_word[index]).summary
             print(text)
 
             topic = get_topic(text)
@@ -90,6 +87,9 @@ class QABotManagement:
             # 질문자가 질문할 때마다 qabot_file 에 질문자의 관심분야에 대해 이슈중인 것에 대해서도 하나씩 추가해야함.
             self.save()
             self.topic()
+
+            if offline_save:
+                self.save_offline_word(topic=topic)
 
         # 인터넷 연결이 안되어 있다면 오프라인 검색.
         except:
@@ -167,6 +167,5 @@ class QABotManagement:
 
 if __name__ == '__main__':
     qabot = QABotManagement()
-    # qabot.search()
-    # qabot.topic_graph()
-    qabot.save_offline_word(topic="Math")
+    qabot.search()
+    qabot.topic_graph()
