@@ -5,6 +5,7 @@ from pprint import pprint
 import matplotlib.pyplot as plt
 import wikipediaapi
 import wikipedia
+import pandas as pd
 
 
 # QABot file 을 관리하는 클래스
@@ -42,7 +43,7 @@ class QABotManagement:
 
     # qabot file 을 저장하는 메소드.
     def save(self):
-        if len(self.qabot_file["data"]) > 500:
+        if len(self.qabot_file["data"]) > 1000:
             del self.qabot_file["data"][0]
 
         with open("./qabot_dataset.json", "w") as json_file:
@@ -84,7 +85,8 @@ class QABotManagement:
 
             topic = get_topic(text)
             related_topic = [i[0] for i in topic[:3]]
-            self.qabot_file["data"].append({"search": title, "summary_word": search[index], "summary": text, "related_topic": related_topic})
+            self.qabot_file["data"].append(
+                {"search": title, "summary_word": search[index], "summary": text, "related_topic": related_topic})
             # 질문자가 질문할 때마다 qabot_file 에 질문자의 관심분야에 대해 이슈중인 것에 대해서도 하나씩 추가해야함.
             self.save()
             self.topic()
@@ -94,7 +96,8 @@ class QABotManagement:
             result = []
 
             for i in self.qabot_file["data"]:
-                if title in i["search"] or i["search"] in title or title in i["summary_word"] or i["summary_word"] in title:
+                if title in i["search"] or i["search"] in title or title in i["summary_word"] \
+                        or i["summary_word"] in title:
                     if i not in result:
                         result.append(i)
 
@@ -140,12 +143,30 @@ class QABotManagement:
 
         plt.show()
 
-    # 관심분야에 이슈중인 단어를 가져오는 메소드.
-    def get_issue_word(self):
-        pass
+    # 랜덤으로 여러개씩 단어를 오프라인으로 저장함.
+    def save_offline_word(self, topic):
+        word_df = pd.read_csv("./NaturalLanguage/topic_modeling.csv")
+        word_df.drop("Unnamed: 0", axis=1, inplace=True)
+        word_df = word_df[word_df["topic"] == topic]
+
+        for i in word_df.sample(20)["word"].tolist():
+            try:
+                self.qabot_file["data"].append(
+                    {"search": i, "summary_word": i, "summary": self.wiki.page(wikipedia.search(i)[0]).summary,
+                     "related_topic": topic})
+
+                if len(self.qabot_file["data"]) > 1000:
+                    del self.qabot_file["data"][0]
+
+                with open("./qabot_dataset.json", "w") as json_file:
+                    json.dump(self.qabot_file, json_file, indent=4)
+
+            except:
+                pass
 
 
 if __name__ == '__main__':
     qabot = QABotManagement()
-    qabot.search()
-    qabot.topic_graph()
+    # qabot.search()
+    # qabot.topic_graph()
+    qabot.save_offline_word(topic="Math")
