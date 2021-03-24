@@ -1,5 +1,7 @@
 Q&A Bot
 -----------
+
+``` python
 >>> from QABot import QABotManagement
 >>> qabot = QABotManagement()
 >>> qabot.search()
@@ -26,3 +28,4 @@ Newton was a fellow of Trinity College and the second Lucasian Professor of Math
 
 
 >>> qabot.topic_graph()
+```
