@@ -1,26 +1,28 @@
 Q&A Bot
 -----------
-전체적인 로직
----------
-- 상대가 질문을 하면 그에 대한 검색내용을 검색단어, 요약단어, 요약, 분야와 함께 학습한다.
+>>> from QABot import QABotManagement
+>>> qabot = QABotManagement()
+>>> qabot.search()
 
-- 학습데이터가 크기가 일정 크기를 넘어가면 오래된 데이터순으로 삭제한다. (사람의 성향은 바뀌기 때문에, 오래전 데이터를 반영할 필요가 없기 때문이다.)
+search: Newton
 
-- 질문자의 관심분야를 학습하여, 관심분야 지표도 보여준다.
+["Newton's method",
+ 'Newton',
+ 'Isaac Newton',
+ 'Thandie Newton',
+ 'Newton (unit)',
+ 'Huey P. Newton',
+ 'Cam Newton',
+ 'Olivia Newton-John',
+ 'Kathryn Newton',
+ "Newton's laws of motion"]
+ 
+What do you want? (Enter the desired order): 3
 
-- 질문을 받을 때마다 단어의 분야들을 학습하여. 질문자의 주 분야를 분석하고, 추후에 질문을 하면 단어들을 분야순위로 정렬하여 보여준다.
+Sir Isaac Newton  (25 December 1642 – 20 March 1726/27) was an English mathematician, physicist, astronomer, theologian, and author (described in his time as a "natural philosopher") who is widely recognised as one of the greatest mathematicians and most influential scientists of all time and as a key figure in the scientific revolution. His book Philosophiæ Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy), first published in 1687, established classical mechanics. Newton also made seminal contributions to optics, and shares credit with Gottfried Wilhelm Leibniz for developing the infinitesimal calculus.
+In Principia, Newton formulated the laws of motion and universal gravitation that formed the dominant scientific viewpoint until it was superseded by the theory of relativity. Newton used his mathematical description of gravity to derive Kepler's laws of planetary motion, account for tides, the trajectories of comets, the precession of the equinoxes and other phenomena, eradicating doubt about the Solar System's heliocentricity. He demonstrated that the motion of objects on Earth and celestial bodies could be accounted for by the same principles. Newton's inference that the Earth is an oblate spheroid was later confirmed by the geodetic measurements of Maupertuis, La Condamine, and others, convincing most European scientists of the superiority of Newtonian mechanics over earlier systems.
+Newton built the first practical reflecting telescope and developed a sophisticated theory of colour based on the observation that a prism separates white light into the colours of the visible spectrum. His work on light was collected in his highly influential book Opticks, published in 1704. He also formulated an empirical law of cooling, made the first theoretical calculation of the speed of sound, and introduced the notion of a Newtonian fluid. In addition to his work on calculus, as a mathematician Newton contributed to the study of power series, generalised the binomial theorem to non-integer exponents, developed a method for approximating the roots of a function, and classified most of the cubic plane curves.
+Newton was a fellow of Trinity College and the second Lucasian Professor of Mathematics at the University of Cambridge. He was a devout but unorthodox Christian who privately rejected the doctrine of the Trinity. Unusually for a member of the Cambridge faculty of the day, he refused to take holy orders in the Church of England. Beyond his work on the mathematical sciences, Newton dedicated much of his time to the study of alchemy and biblical chronology, but most of his work in those areas remained unpublished until long after his death. Politically and personally tied to the Whig party, Newton served two brief terms as Member of Parliament for the University of Cambridge, in 1689–90 and 1701–02. He was knighted by Queen Anne in 1705 and spent the last three decades of his life in London, serving as Warden (1696–1699) and Master (1699–1727) of the Royal Mint, as well as president of the Royal Society (1703–1727).
 
-예)
-질문자 관심분야  
-1순위: Computer Science  
-2순위: Animal  
-3순위: Food  
 
-질문: Python  
-1. Python (programming language)  
-2. Python  
-3. Monty Python  
-4. PYTHON  
-.  
-.  
-. 
+>>> qabot.topic_graph()
