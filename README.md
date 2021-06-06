@@ -1,6 +1,14 @@
 Q&A Bot
 -----------
 
+need library
+- wikipedia
+- wikipediaapi
+- numpy
+- json
+- matplotlib
+- pandas
+
 ``` python
 >>> from QABot import QABotManagement
 >>> qabot = QABotManagement()
