@@ -1,7 +1,7 @@
 Q&A Bot
 -----------
 
-need library
+library
 - wikipedia
 - wikipediaapi
 - numpy
@@ -9,6 +9,9 @@ need library
 - matplotlib
 - pandas
 - nltk
+
+python version
+- 3.8.1
 
 ``` python
 >>> from QABot import QABotManagement
