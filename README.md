@@ -8,6 +8,7 @@ need library
 - json
 - matplotlib
 - pandas
+- nltk
 
 ``` python
 >>> from QABot import QABotManagement
